@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 6, 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80vw;
+    height: 90vh;
+    max-width: 450px;
+    background-color: #2e2626;
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.game{
+    width: 100%;
+    height: 55%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+}
+.boxes{
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.842),-2px -5px 10px rgba(17, 17, 17, 0.842);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 50px;
+    color:#7e0101;
+    border: none;
+    cursor: pointer;
+}
+.hover:hover{
+    box-shadow:inset 2px 5px 10px rgba(17, 17, 17, 0.842);
+}
+.turn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose{
+    width: 40%;
+    height: 50%;
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.842),-2px -5px 10px rgba(17, 17, 17, 0.842);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.turn1,.turn2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.box1{
+    border-radius: 10px 0 0 0;
+
+}
+.box3{
+    border-radius: 0 10px 0 0 ;
+}
+.box7{
+    border-radius: 0 0 0 10px;
+}
+.box9{
+    border-radius: 0 0 10px 0;
+}
+.turn1{
+    color:#7e0101;
+}
+.turn2{
+    color:#860aeb;
+}
+.b-s{
+    box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.842),-2px -5px 10px rgba(17, 17, 17, 0.842);
+}
+.msg{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    gap:5px;
+}
+.hide{
+    display: none;
+}
+.btn{
+    position: absolute;
+    bottom: 30px;
+    width: 100px;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.842),-2px -5px 10px rgba(17, 17, 17, 0.842);
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow:inset 2px 5px 10px rgba(17, 17, 17, 0.842);
+    color: rgba(240, 248, 255, 0.63);
+    font-size: small;
+}
+#ng{
+    right:20px;
+}
